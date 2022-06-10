@@ -1,3 +1,4 @@
+import Bottom from "./Bottom";
 import Middle from "./Middle";
 
 
@@ -15,6 +16,7 @@ export default function Main() {
           </div>
       </section>
       <Middle/>
+      <Bottom/>
     </main>
   )
 }
