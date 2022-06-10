@@ -5,12 +5,12 @@ export default function Main() {
 
 
   return (
-    <main>
+    <main className="content">
       <section className="top">
           <div className="container">
               <div className="top_text">
                   <h2>Все для кровли и фасада</h2>
-                  <h4>РУКАМИ СТРОИТЕЛЬНОЙ КОМПАНИИ COMPANY24!</h4>
+                  <h4>РУКАМИ СТРОИТЕЛЬНОЙ КОМПАНИИ...</h4>
               </div>
           </div>
       </section>

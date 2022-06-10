@@ -38,10 +38,10 @@ code {
 
 .content {
   min-height: calc(100% - 65px - 100px);
-  padding: 20px 0;
+  padding: 0 0 20px;
 }
 .container {
-  padding: 0 15px;
+  padding: 0 10px;
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
@@ -75,7 +75,7 @@ header {
       height: 100%;
       li {
         height: 100%;
-        padding: 20px;
+        padding: 21px;
         transition: all .2s ease;
         &:hover {
           background-color: #3bb8b2;
@@ -92,9 +92,10 @@ header {
 
 .top {
   background: rgb(56, 56, 56) url('./img/house.jpg') center center/cover no-repeat;
-  height: 90vh;
+  height: calc(100vh - 65px);
 
   &_text{
+    text-align: center;
     height: 90%;
     color: white;
     display: flex;
@@ -131,13 +132,98 @@ header {
 
 
 
+h3 {
+  margin: 20px 0;
+}
+
+.middle {
+
+ &_roofing_materials {
+   p {
+     text-indent: 20px;
+   }
+ }
+
+ &_services {
+  h5 {
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    border-radius: 7px;
+  }
+ }
+
+
+}
+
+
+
+
+
+
 
 
 
 
 
 footer {
-  height: 100px;
+  height: 100%;
   background: #333;
   color: white;
+  padding: 15px 0;
+
+  .container {
+    @extend %flex_center;
+  }
+  .footer_contacts {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 712px) {
+  .cards {
+    max-width: 100%;
+    height: 280px;
+    overflow-x: scroll;
+    flex-direction: column;
+
+    &::-webkit-scrollbar{height: 10px}
+  }
+  .middle_services {margin-top: 20px}
+
+}
+
+
+
+@media (max-width: 736px) {
+
+ .top_text h2 {font-size: 40px}
+}
+
+
+
+@media (max-width: 560px) {
+  .top_text h2 {font-size: 34px}
+  .top_text h4 {font-size: 28px}
+
+  h3 {font-size: 34px}
+  .top {height: 65vh}
+
+}
+
+@media (max-width: 440px) {
+  .container {
+    padding: 0;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: unset;
+  }
+
 }

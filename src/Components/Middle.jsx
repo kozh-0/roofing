@@ -2,10 +2,11 @@
 import { data } from "../data";
 
 export default function Middle() {
-    console.log(data);
+    // console.log(data);
+
   return (
     <section className="container">
-        <div>
+        <div className="middle_roofing_materials">
             <h3>Кровельные материалы</h3>
             <p>Для того, чтобы сохранить дом сухим и теплым, необходимо выбирать только качественные кровельные материалы. 
             Стоит отметить, что все зависит не только от цены, но и от фирмы и региона производства.</p>
@@ -24,8 +25,8 @@ export default function Middle() {
             </div>
         </div>
 
-        <div>
-            <h4>Подберем и рассчитаем стройматериалы для вашего дома</h4>
+        <div className="middle_services">
+            <h5>Подберем и рассчитаем стройматериалы для вашего дома</h5>
             <ol>
                 <li>Мансардные окна</li>
                 <li>Сайдинг металлический</li>
@@ -42,6 +43,7 @@ export default function Middle() {
         <div>
             <h3>Акция</h3>
             <p>При покупке металлочерепицы скидка на водосточные системы 10-15%</p>
+            <p>Скидка зависит от материала и его количества</p>
         </div>
         
     </section>
