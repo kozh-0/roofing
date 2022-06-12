@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/roofing/static/css/main.5ad4b12d.css",
-    "main.js": "/roofing/static/js/main.650b5a5d.js",
-    "static/media/СайдингМеталл.jpg": "/roofing/static/media/СайдингМеталл.0cbfdede059542360f1a.jpg",
+    "main.css": "/roofing/static/css/main.fad9ad88.css",
+    "main.js": "/roofing/static/js/main.5e8d0d2b.js",
     "static/media/Монтерей.jpg": "/roofing/static/media/Монтерей.341e25131702305cde34.jpg",
     "static/media/house.jpg": "/roofing/static/media/house.a44ee2bdbddfeed4e918.jpg",
     "static/media/ФасадныеПанели.jpg": "/roofing/static/media/ФасадныеПанели.a5b76a4972f0c01cbac9.jpg",
     "static/media/МансардныеОкна.jpg": "/roofing/static/media/МансардныеОкна.69365f78e2f2c7441dbf.jpg",
+    "static/media/СайдингМеталл.jpg": "/roofing/static/media/СайдингМеталл.20a3a5f9498518831b3c.jpg",
+    "static/media/MapScreen.JPG": "/roofing/static/media/MapScreen.a5fe9b4205ebf36ffcb3.JPG",
     "static/media/Трамонтана.jpg": "/roofing/static/media/Трамонтана.4e99e9ccf40e3831b4f6.jpg",
     "static/media/Монтаж2.jpg": "/roofing/static/media/Монтаж2.c20f3f1d1b50ef552b27.jpg",
     "static/media/СайдингВиниловый.jpg": "/roofing/static/media/СайдингВиниловый.a6b9d051c568ffb83f9a.jpg",
@@ -18,12 +19,16 @@
     "static/media/Профнастил.jpg": "/roofing/static/media/Профнастил.607ce9a75c58ff616df0.jpg",
     "static/media/Водосток.jpg": "/roofing/static/media/Водосток.2fd648297ea7b6b74d41.jpg",
     "static/media/Черепица.jpg": "/roofing/static/media/Черепица.bb22fbdb3cab81b0f097.jpg",
+    "static/media/Sales.jpg": "/roofing/static/media/Sales.f65931f76fed76af3d20.jpg",
+    "static/media/google.png": "/roofing/static/media/google.9bbd62a9fba46b1715c7.png",
+    "static/media/Yandex.png": "/roofing/static/media/Yandex.f0c2d8237b5f103ad253.png",
+    "static/media/2gis.svg": "/roofing/static/media/2gis.3d0ac2d2dc8445c3623ef5095aa2e032.svg",
     "index.html": "/roofing/index.html",
-    "main.5ad4b12d.css.map": "/roofing/static/css/main.5ad4b12d.css.map",
-    "main.650b5a5d.js.map": "/roofing/static/js/main.650b5a5d.js.map"
+    "main.fad9ad88.css.map": "/roofing/static/css/main.fad9ad88.css.map",
+    "main.5e8d0d2b.js.map": "/roofing/static/js/main.5e8d0d2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ad4b12d.css",
-    "static/js/main.650b5a5d.js"
+    "static/css/main.fad9ad88.css",
+    "static/js/main.5e8d0d2b.js"
   ]
 }
