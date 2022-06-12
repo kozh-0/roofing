@@ -1,4 +1,5 @@
 import Bottom from "./Bottom";
+import Maps from "./Maps";
 import Middle from "./Middle";
 
 
@@ -17,6 +18,7 @@ export default function Main() {
       </section>
       <Middle/>
       <Bottom/>
+      <Maps/>
     </main>
   )
 }

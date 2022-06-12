@@ -5,10 +5,10 @@ export default function Header() {
     <header>
         <div className="header container">
             <a href="tel:89373146400">+7 (937) 314-64-00</a>
-            <ul>
+            {/* <ul>
                 <li>O нас</li>
                 <li>Контакты</li>
-            </ul>
+            </ul> */}
         </div>
     </header>
     )

@@ -17,7 +17,6 @@ import Snegoderzh from './img/Услуги/Снегодержатели.jpg';
 import FasadPanel from './img/Услуги/ФасадныеПанели.jpg';
 import ShtaketMetall from './img/Услуги/ШтакетникМеталл.jpg';
 
-// import Sales from './img/Услуги/Sales.jpg'
 
 
 
