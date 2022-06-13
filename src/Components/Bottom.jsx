@@ -2,7 +2,8 @@ import { services } from "../imgData";
 import Sales from '../img/Услуги/Sales.jpg';
 
 export default function Bottom() {
-    console.log(Sales);
+
+    
   return (
     <section>
         <div className="middle_services">

@@ -1,5 +1,5 @@
 body, h1, h2, h3, h4, h5, h6 { margin: 0 }
-
+body {height: 100%;}
 
 
 %flex_center {
@@ -108,32 +108,19 @@ header {
     
     &_cards {
       display: flex;
-      margin-top: 20px;
-      flex-direction: row;
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: stretch;
       
       &_item {
-        width: 300px;
-        height: 100%;
-        border: 1px solid rgb(255, 255, 255);
-        // border-radius: 20px;
+        width: 25%;
+        border: 1px solid white;
+
+        &_imgdiv { height: 300px }
         
-        transition: all .2s ease;
-        &:hover {
-          transform: scale(1.1);
-        }
-
-        &_imgdiv {
-          max-width: 300px;
-          height: 300px;
-
-        }
         &_text {
           margin: 0;
-          text-align: center;
-          background: #ddd;
+          padding: 10px 5px;
+          color: white;
+          background: rgb(72, 16, 33);
         }
 
       }
@@ -152,7 +139,6 @@ header {
     @extend %flex_center;
     justify-content: space-evenly;
     img {
-      // height: 100px;
       width: 250px;
     }
   }
@@ -167,6 +153,7 @@ header {
     @extend %flex_center;
     justify-content: space-evenly;
     img {
+      margin: 20px 0;
       width: 200px;
       border-radius: 10px;
       
@@ -179,6 +166,7 @@ header {
   }
 }
 
+div.leaflet-bottom.leaflet-right {display: none}
 
 
 
@@ -195,12 +183,15 @@ footer {
     @extend %flex_center;
   }
   .footer_contacts {
-    width: 100%;
+    // width: 100%;
   }
 }
 
 
 // MEDIA =========================================================================
+@media (max-width: 1060px) {
+  .middle_services_cards_item{ width: 33.3% }
+}
 
 @media (max-width: 712px) {
   .cards {
@@ -212,6 +203,8 @@ footer {
     &::-webkit-scrollbar{height: 10px}
   }
   .middle_services {margin-top: 20px}
+  .middle_services_cards_item{ width: 50% }
+
 }
 
 @media (max-width: 736px) {
@@ -236,6 +229,8 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
   }
+  .middle_services_cards_item{ width: 100% }
+
 }
 
 @media (max-width: 440px) {
@@ -254,3 +249,44 @@ footer {
 // фото наших работ подписать
 // товары что мы продаем картики с почты подписать на сайте и сделать слайдер
 // 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
