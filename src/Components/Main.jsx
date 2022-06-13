@@ -1,6 +1,7 @@
 import Bottom from "./Bottom";
 import Maps from "./Maps";
 import Middle from "./Middle";
+import Portfolio from './Portfolio';
 
 
 export default function Main() {
@@ -18,6 +19,7 @@ export default function Main() {
       </section>
       <Middle/>
       <Bottom/>
+      <Portfolio/>
       <Maps/>
     </main>
   )

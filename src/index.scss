@@ -12,20 +12,17 @@ body {height: 100%;}
 
 
 // scroll
-::-webkit-scrollbar{width: 10px}
-::-webkit-scrollbar-track{
-  background: #b1b1b1;
-  border-left: 4px solid white;
-  border-right: 4px solid white;
+::-webkit-scrollbar{ width: 14px }
+::-webkit-scrollbar-track{ background: #b1b1b1 }
+::-webkit-scrollbar-thumb{ 
+  background: #2c4381;
+  border-radius: 7px;
+  &:hover { background-color:#273b70 }
 }
-::-webkit-scrollbar-thumb{ background: #0d1e4b }
 
 
 h3 { margin: 20px 0 }
-.content {
-  min-height: calc(100% - 65px - 100px);
-  padding: 0 0 20px;
-}
+.content { min-height: calc(100% - 65px - 100px) }
 .container {
   padding: 0 10px;
   max-width: 1200px;
@@ -36,15 +33,16 @@ h3 { margin: 20px 0 }
 
 // HEADER =============================================================
 header {
-  background-color: #45d5ce;
+  background-color: orange;
+  // background-color: #45d5ce;
   height: 65px;
 
   .header {
     @extend %flex_center;
     a {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 700;
-      color: black;
+      color: rgb(0, 0, 0);
       transition: all .2s ease;
         &:hover {
           transform: scale(1.1);
@@ -117,19 +115,32 @@ header {
         &_imgdiv { height: 300px }
         
         &_text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          height: 70px;
           margin: 0;
           padding: 10px 5px;
           color: white;
           background: rgb(72, 16, 33);
         }
 
+        // transition: transform .2s ease;
+        // &:hover {
+        //   transform: scale(1.1);
+        // }
       }
     }
     
     h5 {
+      font-size: 30px;
+      font-weight: 600;
       padding: 20px;
       border-radius: 7px;
       text-align: center;
+      // background-color:aqua;
     }
   }
 
@@ -145,9 +156,41 @@ header {
 }
 
 
+// Портфолио ===========================================================
+
+.portfolio {
+  &_doposle {
+    @extend %flex_center;
+    div:first-child {border-right: 1px solid white}
+    img {width: 100%}
+    h5 {
+      text-align: center;
+      background-color: red;
+      color: white;
+      padding: 10px;
+      margin: -5px 0;
+    }
+  }
+  &_slider {
+    @extend %flex_center;
+
+    margin-top: 20px;
+    // width: 100%;
+    overflow: auto;
+    &_item {
+      margin-right: 5px;
+      height: 500px;
+      width: 100%;
+      background:rgb(166, 166, 166);
+    }
+  }
+}
+
+
 // MAPS ===========================================================
 
 .maps {
+  margin-top: 20px;
 
   &_imgs {
     @extend %flex_center;
@@ -179,15 +222,13 @@ footer {
   color: white;
   padding: 15px 0;
 
-  .container {
-    @extend %flex_center;
-  }
-  .footer_contacts {
-    // width: 100%;
-  }
+  .container { @extend %flex_center }
+
 }
 
-
+div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+  height: 500px !important;
+}
 // MEDIA =========================================================================
 @media (max-width: 1060px) {
   .middle_services_cards_item{ width: 33.3% }
@@ -210,8 +251,13 @@ footer {
 @media (max-width: 736px) {
 
  .top_text h2 {font-size: 40px}
+ .portfolio_doposle {flex-wrap: wrap}
 }
 @media (max-width: 666px) {
+  .header {
+    justify-content: center !important;
+    // font-size: 24px;
+  }
   .maps_imgs{ 
     flex-wrap: wrap;
     justify-content: center;
@@ -241,6 +287,10 @@ footer {
   footer .container {
     flex-direction: column;
     align-items: unset;
+  }
+
+  div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+    height: 400px !important;
   }
 }
 
