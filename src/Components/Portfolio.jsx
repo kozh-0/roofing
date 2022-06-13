@@ -1,10 +1,10 @@
 import doImg from '../img/Портфолио/1до.jpg';
 import posleImg from '../img/Портфолио/1после.jpg';
-import img from '../img/Портфолио/IMG_0771.JPG';
+import { portfolio } from '../imgData';
 
 
 export default function Portfolio() {
-    console.log(img);
+    // console.log(portfolio);
   return (
     <section className="portfolio container">
         
@@ -21,13 +21,14 @@ export default function Portfolio() {
             </div>
 
             <div className="portfolio_slider">
-                <div className="portfolio_slider_item" style={{background: `url(${img}) center center/cover no-repeat`}}>sssss</div>
-                <div className="portfolio_slider_item" style={{background: `url(${img}) center center/cover no-repeat`}}>sssss</div>
-                <div className="portfolio_slider_item" style={{background: `url(${img}) center center/cover no-repeat`}}>sssss</div>
-                {/* <div className="portfolio_slider_item">sssss</div>
-                <div className="portfolio_slider_item">sssss</div>
-                <div className="portfolio_slider_item">sssss</div> */}
+                {portfolio.map(el => (
+                    <div 
+                        key={el} 
+                        className="portfolio_slider_item" 
+                        style={{background: `url(${el}) center center/cover no-repeat`}}></div>
+                ))}
             </div>
+   
     </section>
   )
 }

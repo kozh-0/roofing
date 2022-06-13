@@ -18,7 +18,18 @@ import FasadPanel from './img/Услуги/ФасадныеПанели.jpg';
 import ShtaketMetall from './img/Услуги/ШтакетникМеталл.jpg';
 
 // Портфолио
-// import * as kek from './img/Портфолио';
+import img1 from './img/Портфолио/img1.JPG';
+import img2 from './img/Портфолио/img2.JPG';
+import img3 from './img/Портфолио/img3.JPG';
+import img4 from './img/Портфолио/img4.JPG';
+import img5 from './img/Портфолио/img5.JPG';
+import img6 from './img/Портфолио/img6.JPG';
+import img7 from './img/Портфолио/img7.JPG';
+import img8 from './img/Портфолио/img8.JPG';
+import img9 from './img/Портфолио/img9.JPG';
+import img10 from './img/Портфолио/img10.JPG';
+import img11 from './img/Портфолио/img11.JPG';
+import img12 from './img/Портфолио/img12.JPG';
 
 
 
@@ -51,5 +62,7 @@ export const services = [
     new Card('Штакетник металлический', ShtaketMetall),
 ]
 
+
+export const portfolio = [img1, img5, img3, img4, img2, img6, img7, img8, img9, img10, img11, img12];
 
 // console.log('ШТАКЕТНИК МЕТАЛЛИЧЕСКИЙ'.toLowerCase());

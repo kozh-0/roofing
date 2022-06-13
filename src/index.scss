@@ -15,9 +15,10 @@ body {height: 100%;}
 ::-webkit-scrollbar{ width: 14px }
 ::-webkit-scrollbar-track{ background: #b1b1b1 }
 ::-webkit-scrollbar-thumb{ 
-  background: #2c4381;
+  background: #99183f;
+  // background: #2c4381;
   border-radius: 7px;
-  &:hover { background-color:#273b70 }
+  &:hover { background-color:#781533 }
 }
 
 
@@ -173,15 +174,14 @@ header {
   }
   &_slider {
     @extend %flex_center;
-
     margin-top: 20px;
-    // width: 100%;
-    overflow: auto;
+    width: 100%;
+    overflow-x: scroll;
     &_item {
-      margin-right: 5px;
+      margin-bottom: 10px;
       height: 500px;
-      width: 100%;
-      background:rgb(166, 166, 166);
+      margin-right: 5px;
+      min-width: 100%;
     }
   }
 }
@@ -256,12 +256,13 @@ div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-gra
 @media (max-width: 666px) {
   .header {
     justify-content: center !important;
-    // font-size: 24px;
   }
   .maps_imgs{ 
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .portfolio_slider_item {height: 380px}
 }
 
 @media (max-width: 560px) {
@@ -292,6 +293,7 @@ div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-gra
   div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
     height: 400px !important;
   }
+  .middle_services h5 {font-size: 22px}
 }
 
 // ссылка на гугл карты
