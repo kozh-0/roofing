@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/roofing/static/css/main.cb159ee7.css",
-    "main.js": "/roofing/static/js/main.68e8ac0d.js",
-    "static/media/Монтерей.jpg": "/roofing/static/media/Монтерей.341e25131702305cde34.jpg",
+    "main.css": "/roofing/static/css/main.1156b85f.css",
+    "main.js": "/roofing/static/js/main.b1a4613a.js",
+    "static/media/1после.jpg": "/roofing/static/media/1после.9902c62973567732e19b.jpg",
+    "static/media/1до.jpg": "/roofing/static/media/1до.a0ff5fe843b81d2e2b58.jpg",
+    "static/media/IMG_0771.JPG": "/roofing/static/media/IMG_0771.c7c6acf88ea651e38c54.JPG",
     "static/media/house.jpg": "/roofing/static/media/house.a44ee2bdbddfeed4e918.jpg",
-    "static/media/ФасадныеПанели.jpg": "/roofing/static/media/ФасадныеПанели.a5b76a4972f0c01cbac9.jpg",
+    "static/media/ФасадныеПанели.jpg": "/roofing/static/media/ФасадныеПанели.9390058c62a22fa225eb.jpg",
     "static/media/МансардныеОкна.jpg": "/roofing/static/media/МансардныеОкна.69365f78e2f2c7441dbf.jpg",
+    "static/media/Монтерей.jpg": "/roofing/static/media/Монтерей.f63aa2bc12679234b0c9.jpg",
     "static/media/СайдингМеталл.jpg": "/roofing/static/media/СайдингМеталл.20a3a5f9498518831b3c.jpg",
     "static/media/Трамонтана.jpg": "/roofing/static/media/Трамонтана.4e99e9ccf40e3831b4f6.jpg",
     "static/media/Монтаж2.jpg": "/roofing/static/media/Монтаж2.c20f3f1d1b50ef552b27.jpg",
@@ -23,11 +26,11 @@
     "static/media/Yandex.png": "/roofing/static/media/Yandex.f0c2d8237b5f103ad253.png",
     "static/media/2gis.svg": "/roofing/static/media/2gis.3d0ac2d2dc8445c3623ef5095aa2e032.svg",
     "index.html": "/roofing/index.html",
-    "main.cb159ee7.css.map": "/roofing/static/css/main.cb159ee7.css.map",
-    "main.68e8ac0d.js.map": "/roofing/static/js/main.68e8ac0d.js.map"
+    "main.1156b85f.css.map": "/roofing/static/css/main.1156b85f.css.map",
+    "main.b1a4613a.js.map": "/roofing/static/js/main.b1a4613a.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb159ee7.css",
-    "static/js/main.68e8ac0d.js"
+    "static/css/main.1156b85f.css",
+    "static/js/main.b1a4613a.js"
   ]
 }
