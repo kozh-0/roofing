@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/roofing/static/css/main.756f1188.css",
-    "main.js": "/roofing/static/js/main.4a10f2a5.js",
+    "main.css": "/roofing/static/css/main.7440d8f5.css",
+    "main.js": "/roofing/static/js/main.f3b58c77.js",
     "static/media/1после.jpg": "/roofing/static/media/1после.9902c62973567732e19b.jpg",
     "static/media/1до.jpg": "/roofing/static/media/1до.a0ff5fe843b81d2e2b58.jpg",
     "static/media/img3.JPG": "/roofing/static/media/img3.c7c6acf88ea651e38c54.JPG",
@@ -11,6 +11,7 @@
     "static/media/img7.JPG": "/roofing/static/media/img7.37f21966bf0cad1ab374.JPG",
     "static/media/house.jpg": "/roofing/static/media/house.a44ee2bdbddfeed4e918.jpg",
     "static/media/img6.JPG": "/roofing/static/media/img6.dce9f3c5451c8a19dfe4.JPG",
+    "static/media/whatsapp.png": "/roofing/static/media/whatsapp.bddc4c29f4fdb3317833.png",
     "static/media/img9.JPG": "/roofing/static/media/img9.3e606f7d04c521d97ecf.JPG",
     "static/media/img4.JPG": "/roofing/static/media/img4.3e93526236c17589843e.JPG",
     "static/media/img12.JPG": "/roofing/static/media/img12.098f8f787f97a6b6bed6.JPG",
@@ -22,7 +23,7 @@
     "static/media/img11.JPG": "/roofing/static/media/img11.1027edb29fd5e0f78b0f.JPG",
     "static/media/СайдингМеталл.jpg": "/roofing/static/media/СайдингМеталл.20a3a5f9498518831b3c.jpg",
     "static/media/Трамонтана.jpg": "/roofing/static/media/Трамонтана.4e99e9ccf40e3831b4f6.jpg",
-    "static/media/Монтаж2.jpg": "/roofing/static/media/Монтаж2.c20f3f1d1b50ef552b27.jpg",
+    "static/media/Sales.png": "/roofing/static/media/Sales.9cf2b6f360f0197591c8.png",
     "static/media/СайдингВиниловый.jpg": "/roofing/static/media/СайдингВиниловый.a6b9d051c568ffb83f9a.jpg",
     "static/media/Монтекристо.jpg": "/roofing/static/media/Монтекристо.ae5b99d6c9a0f656a7b5.jpg",
     "static/media/Снегодержатели.jpg": "/roofing/static/media/Снегодержатели.e50c18bf96e543d918ef.jpg",
@@ -32,16 +33,15 @@
     "static/media/Профнастил.jpg": "/roofing/static/media/Профнастил.607ce9a75c58ff616df0.jpg",
     "static/media/Водосток.jpg": "/roofing/static/media/Водосток.2fd648297ea7b6b74d41.jpg",
     "static/media/Черепица.jpg": "/roofing/static/media/Черепица.bb22fbdb3cab81b0f097.jpg",
-    "static/media/Sales.jpg": "/roofing/static/media/Sales.f65931f76fed76af3d20.jpg",
     "static/media/google.png": "/roofing/static/media/google.9bbd62a9fba46b1715c7.png",
     "static/media/Yandex.png": "/roofing/static/media/Yandex.f0c2d8237b5f103ad253.png",
-    "static/media/2gis.svg": "/roofing/static/media/2gis.3d0ac2d2dc8445c3623ef5095aa2e032.svg",
     "index.html": "/roofing/index.html",
-    "main.756f1188.css.map": "/roofing/static/css/main.756f1188.css.map",
-    "main.4a10f2a5.js.map": "/roofing/static/js/main.4a10f2a5.js.map"
+    "static/media/2gis.svg": "/roofing/static/media/2gis.3d0ac2d2dc8445c3623ef5095aa2e032.svg",
+    "main.7440d8f5.css.map": "/roofing/static/css/main.7440d8f5.css.map",
+    "main.f3b58c77.js.map": "/roofing/static/js/main.f3b58c77.js.map"
   },
   "entrypoints": [
-    "static/css/main.756f1188.css",
-    "static/js/main.4a10f2a5.js"
+    "static/css/main.7440d8f5.css",
+    "static/js/main.f3b58c77.js"
   ]
 }
