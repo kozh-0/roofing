@@ -11,12 +11,13 @@ export default function Header() {
                 className='whatsapp' 
                 style={{color: 'black', fontWeight: '500'}} 
                 rel="noreferrer" target="_blank"
-                href="https://web.whatsapp.com/send?phone=%2B79373146400&text&app_absent=0">
+                href="https://wa.me/+79373146400">
                     <img src={whatsapp} alt="whatsapp" />WhatsApp
             </a> 
         </div>
     </header>
     )
 }
+// href="https://web.whatsapp.com/send?phone=%2B79373146400&text&app_absent=0">
 
    

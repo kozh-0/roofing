@@ -13,7 +13,7 @@ export default function Main() {
           <div className="container">
               <div className="top_text">
                   <h2>Все для кровли и фасада</h2>
-                  <h4>РУКАМИ СТРОИТЕЛЬНОЙ КОМПАНИИ...</h4>
+                  <h4>РУКАМИ ПРОФЕССИОНАЛОВ</h4>
               </div>
           </div>
       </section>

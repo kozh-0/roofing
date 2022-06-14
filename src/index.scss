@@ -108,9 +108,10 @@ header {
 .cards {
   @extend %flex_center;
   flex-wrap: wrap;
+  margin-bottom: 15px;
 
   &_item {
-    margin: 20px;
+    margin: 10px;
     text-align: center;
     img {
       height: 200px;
@@ -160,12 +161,20 @@ header {
       }
     }
     
-    h5 {
-      font-size: 30px;
-      font-weight: 600;
-      padding: 20px 0;
-      text-align: center;
+    .middle_services_title {
+      
       background: orange;
+      text-align: center;
+      padding: 20px 0;
+      h5 {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      span {
+        display:block;
+        margin-top: 10px;
+        font-size: 22px;
+      }
     }
   }
 
@@ -208,6 +217,7 @@ header {
       margin-right: 5px;
       min-width: 100%;
     }
+    &::-webkit-scrollbar{ height: 20px }
   }
 }
 
