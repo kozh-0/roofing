@@ -60,6 +60,8 @@ h3 { margin: 20px 0 }
 header {
   background-color: orange;
   height: 65px;
+  box-shadow: 0px 9px 5px 0px rgba(34, 60, 80, 0.2);
+  
 
   .header {
     @extend %flex_center;
@@ -275,6 +277,11 @@ div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-gra
 }
 
 @media (max-width: 712px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
   .cards {
     justify-content: center;
     // max-width: 100%;
