@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/roofing/static/css/main.7440d8f5.css",
-    "main.js": "/roofing/static/js/main.f3b58c77.js",
+    "main.css": "/roofing/static/css/main.5e32a70e.css",
+    "main.js": "/roofing/static/js/main.8d10aee3.js",
     "static/media/1после.jpg": "/roofing/static/media/1после.9902c62973567732e19b.jpg",
     "static/media/1до.jpg": "/roofing/static/media/1до.a0ff5fe843b81d2e2b58.jpg",
     "static/media/img3.JPG": "/roofing/static/media/img3.c7c6acf88ea651e38c54.JPG",
@@ -37,11 +37,11 @@
     "static/media/Yandex.png": "/roofing/static/media/Yandex.f0c2d8237b5f103ad253.png",
     "index.html": "/roofing/index.html",
     "static/media/2gis.svg": "/roofing/static/media/2gis.3d0ac2d2dc8445c3623ef5095aa2e032.svg",
-    "main.7440d8f5.css.map": "/roofing/static/css/main.7440d8f5.css.map",
-    "main.f3b58c77.js.map": "/roofing/static/js/main.f3b58c77.js.map"
+    "main.5e32a70e.css.map": "/roofing/static/css/main.5e32a70e.css.map",
+    "main.8d10aee3.js.map": "/roofing/static/js/main.8d10aee3.js.map"
   },
   "entrypoints": [
-    "static/css/main.7440d8f5.css",
-    "static/js/main.f3b58c77.js"
+    "static/css/main.5e32a70e.css",
+    "static/js/main.8d10aee3.js"
   ]
 }
