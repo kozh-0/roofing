@@ -8,7 +8,31 @@ body {height: 100%;}
   align-items: center;
 }
 
+.pulsate {
+  animation: pulsate 1.3s infinite;
+}
+@keyframes pulsate {
+  0% { 
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(153, 24, 63, 0.7);
+  }
+  50% { 
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 165, 0, 0);
+  }
+  100% { transform: scale(1) }
+}
+.whatsapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .2s ease;
+  img { width: 30px }
 
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 
 
 // scroll
@@ -35,20 +59,20 @@ h3 { margin: 20px 0 }
 // HEADER =============================================================
 header {
   background-color: orange;
-  // background-color: #45d5ce;
   height: 65px;
 
   .header {
     @extend %flex_center;
-    a {
-      font-size: 24px;
-      font-weight: 700;
-      color: rgb(0, 0, 0);
+
+    div {
       transition: all .2s ease;
-        &:hover {
-          transform: scale(1.1);
-        }
+      &:hover { transform: scale(1.1) }
       
+      a {
+        font-size: 24px;
+        font-weight: 700;
+        color: black;
+      }
     }
   }
 }
@@ -125,6 +149,7 @@ header {
           margin: 0;
           padding: 10px 5px;
           color: white;
+          font-size: 16px;
           background: rgb(72, 16, 33);
         }
 
@@ -138,10 +163,9 @@ header {
     h5 {
       font-size: 30px;
       font-weight: 600;
-      padding: 20px;
-      border-radius: 7px;
+      padding: 20px 0;
       text-align: center;
-      // background-color:aqua;
+      background: orange;
     }
   }
 
@@ -173,6 +197,7 @@ header {
     }
   }
   &_slider {
+    cursor: grab;
     @extend %flex_center;
     margin-top: 20px;
     width: 100%;
@@ -216,13 +241,18 @@ div.leaflet-bottom.leaflet-right {display: none}
 
 // FOOTER ===========================================================
 
+
+
 footer {
   height: 100%;
   background: #333;
   color: white;
   padding: 15px 0;
 
-  .container { @extend %flex_center }
+  .footer { 
+    @extend %flex_center;
+    flex-wrap: wrap; 
+  }
 
 }
 
@@ -236,12 +266,13 @@ div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-gra
 
 @media (max-width: 712px) {
   .cards {
-    max-width: 100%;
-    height: 280px;
-    overflow-y: hidden;
-    flex-direction: column;
+    justify-content: center;
+    // max-width: 100%;
+    // height: 280px;
+    // overflow-y: hidden;
+    // flex-direction: column;
 
-    &::-webkit-scrollbar{height: 10px}
+    // &::-webkit-scrollbar{height: 10px}
   }
   .middle_services {margin-top: 20px}
   .middle_services_cards_item{ width: 50% }
@@ -254,9 +285,6 @@ div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-gra
  .portfolio_doposle {flex-wrap: wrap}
 }
 @media (max-width: 666px) {
-  .header {
-    justify-content: center !important;
-  }
   .maps_imgs{ 
     flex-wrap: wrap;
     justify-content: center;
@@ -281,14 +309,9 @@ div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-gra
 }
 
 @media (max-width: 440px) {
-  .container {
-    padding: 0;
-  }
-
-  footer .container {
-    flex-direction: column;
-    align-items: unset;
-  }
+  .container { padding: 0 }
+  .middle_sales {margin-top: 20px }
+  .portfolio_slider_item { height: 350px }
 
   div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
     height: 400px !important;
@@ -296,11 +319,6 @@ div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-gra
   .middle_services h5 {font-size: 22px}
 }
 
-// ссылка на гугл карты
-
-// фото наших работ подписать
-// товары что мы продаем картики с почты подписать на сайте и сделать слайдер
-// 
 
 
 

@@ -1,14 +1,19 @@
-
+import whatsapp from '../img/whatsapp.png';
 
 export default function Header() {
   return (
     <header>
         <div className="header container">
-            <a href="tel:89373146400">+7 (937) 314-64-00</a>
-            {/* <ul>
-                <li>O нас</li>
-                <li>Контакты</li>
-            </ul> */}
+            <div>
+                <a className='pulsate' href="tel:89373146400">+7 (937) 314-64-00</a>
+            </div>
+            <a 
+                className='whatsapp' 
+                style={{color: 'black', fontWeight: '500'}} 
+                rel="noreferrer" target="_blank"
+                href="https://web.whatsapp.com/send?phone=%2B79373146400&text&app_absent=0">
+                    <img src={whatsapp} alt="whatsapp" />WhatsApp
+            </a> 
         </div>
     </header>
     )

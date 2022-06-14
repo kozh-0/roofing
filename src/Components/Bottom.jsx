@@ -1,5 +1,5 @@
 import { services } from "../imgData";
-import Sales from '../img/Услуги/Sales.jpg';
+import Sales from '../img/Услуги/Sales.png';
 
 export default function Bottom() {
 
@@ -24,7 +24,7 @@ export default function Bottom() {
         </div>
 
         <div className="middle_sales container">
-            <img src={Sales} alt="sale" />
+            <img className="pulsate" style={{borderRadius: '15%'}} src={Sales} alt="sale" />
             <p>При покупке металлочерепицы скидка на водосточные системы 10-15% <br />
             Скидка зависит от материала и его количества</p>
         </div>
