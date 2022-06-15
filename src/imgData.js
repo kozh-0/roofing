@@ -48,7 +48,8 @@ export const metalTile = [
 ]
 
 export const services = [
-    new Card('Монтаж кровли, фасада, снегозадержателей, водосточных систем', Montazh),
+    // new Card('Монтаж кровли, фасада, снегозадержателей, водосточных систем', Montazh),
+    new Card('Монтаж', Montazh),
     new Card('Водосточные системы (пластик/металл)', Vodostok),
     new Card('Гибкая черепица', Cherepica),
     new Card('Мансардные окна', Mansard),

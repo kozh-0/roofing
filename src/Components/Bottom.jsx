@@ -9,7 +9,7 @@ export default function Bottom() {
         <div className="middle_services">
             <div className="middle_services_title">
                 <h5>Подберем и рассчитаем стройматериалы для вашего дома</h5>
-                <span>Полная комплектация, Точный расчет, Доставка, Монтаж.</span>
+                <span>Полная комплектация. Точный расчет. Доставка. Монтаж.</span>
 
             </div>
             
