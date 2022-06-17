@@ -258,7 +258,7 @@ header {
 
 .maps {
   margin-top: 20px;
-
+  h4 { text-align: center }
   &_imgs {
     @extend %flex_center;
     justify-content: space-evenly;
