@@ -79,6 +79,10 @@ header {
         color: black;
       }
     }
+
+    &_logo {
+      height: 50px;
+    }
   }
 }
 
@@ -158,17 +162,14 @@ header {
           font-size: 18px;
           background: rgb(72, 16, 33);
         }
-
-        // transition: transform .2s ease;
-        // &:hover {
-        //   transform: scale(1.1);
-        // }
       }
     }
     
     .middle_services_title {
+      // background: orange;
       
-      background: orange;
+      background: #333;
+      color: white;
       text-align: center;
       padding: 20px 0;
       h5 {
@@ -188,10 +189,8 @@ header {
     padding: 40px 0;
     @extend %flex_center;
     justify-content: space-evenly;
-    img {
-      width: 250px;
-    }
-    p { margin-left: 3%}
+    img { width: 250px }
+    p { margin-left: 3% }
   }
 }
 
@@ -201,8 +200,8 @@ header {
 .portfolio {
   &_doposle {
     @extend %flex_center;
-    div:first-child {border-right: 1px solid white}
-    img {width: 100%}
+    div:first-child { border-right: 1px solid white }
+    img { width: 100% }
     h5 {
       text-align: center;
       background-color: red;
@@ -275,9 +274,11 @@ header {
       }
     }
   }
+
+  &_leaflet { height: 500px }
 }
 
-div.leaflet-bottom.leaflet-right {display: none}
+div.leaflet-bottom.leaflet-right { display: none }
 
 
 
@@ -290,54 +291,54 @@ footer {
   height: 100%;
   background: #333;
   color: white;
-  padding: 15px 0;
+  padding: 25px 0;
 
   .footer { 
     @extend %flex_center;
     flex-wrap: wrap; 
+
+    &_loca {
+      display: flex;
+      flex-direction: column;
+      p {
+        border-top: 2px solid orange;
+        margin: 5px 0 0 0;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
   }
 
-}
-
-div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
-  height: 500px !important;
 }
 // MEDIA =========================================================================
 @media (max-width: 1060px) {
   .middle_services_cards_item{ width: 33.3% }
 }
 
+@media (max-width: 736px) {
+ .top_text h2 {font-size: 40px}
+ .portfolio_doposle {flex-wrap: wrap}
+}
+
 @media (max-width: 712px) {
   header {
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 401;
   }
-  .cards {
-    justify-content: center;
-    // max-width: 100%;
-    // height: 280px;
-    // overflow-y: hidden;
-    // flex-direction: column;
-
-    // &::-webkit-scrollbar{height: 10px}
-  }
+  .cards { justify-content: center }
   .middle_services {margin-top: 20px}
   .middle_services_cards_item{ width: 50% }
 
+  .header_logo { display: none }
+  .footer { justify-content: space-around !important}
 }
 
-@media (max-width: 736px) {
-
- .top_text h2 {font-size: 40px}
- .portfolio_doposle {flex-wrap: wrap}
-}
 @media (max-width: 666px) {
   .maps_imgs{ 
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .portfolio_slider_inner_item {height: 380px}
 }
 
@@ -353,6 +354,7 @@ div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-gra
     flex-direction: column;
   }
   .middle_services_cards_item{ width: 100% }
+  .maps_leaflet { height: 400px }
 
 }
 
@@ -360,51 +362,8 @@ div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-gra
   .container { padding: 0 }
   .middle_sales {margin-top: 20px }
   .portfolio_slider_inner_item { height: 350px }
+  // .maps_leaflet { height: 350px }
 
-  div.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
-    height: 400px !important;
-  }
-  .middle_services h5 {font-size: 22px}
+  .middle_services h5 { font-size: 22px }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

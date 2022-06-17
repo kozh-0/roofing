@@ -5,7 +5,7 @@ export default function LeafletMAP() {
     const position = [54.801, 56.0948] // Трамвайная
 
     return (
-        <MapContainer center={position} zoom={15} scrollWheelZoom={false}>
+        <MapContainer className='maps_leaflet' center={position} zoom={15} scrollWheelZoom={false}>
         <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

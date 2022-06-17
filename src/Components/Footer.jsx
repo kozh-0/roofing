@@ -1,4 +1,5 @@
 import whatsapp from '../img/whatsapp.png';
+import logo from '../img/logo2.png'
 
 export default function Footer() {
   return (
@@ -16,8 +17,11 @@ export default function Footer() {
             href="https://wa.me/+79373146400">
               <img src={whatsapp} alt="whatsapp" />WhatsApp</a>
            
+          <div className='footer_loca'>
+            <img style={{height: '50px', margin: '0 auto'}} src={logo} alt="logo" />
+            <p>г.Уфа, Индустриальное ш. 44/1</p>
+          </div>
 
-          <p>г.Уфа, Индустриальное ш. 44/1</p>
         </div>
     </footer>
   )

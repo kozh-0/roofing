@@ -1,4 +1,5 @@
 import whatsapp from '../img/whatsapp.png';
+import logo from '../img/logo1.png'
 
 export default function Header() {
   return (
@@ -7,6 +8,7 @@ export default function Header() {
             <div>
                 <a className='pulsate' href="tel:89373146400">+7 (937) 314-64-00</a>
             </div>
+            <img className='header_logo' src={logo} alt="logo" />
             <a 
                 className='whatsapp' 
                 style={{color: 'black', fontWeight: '500'}} 
