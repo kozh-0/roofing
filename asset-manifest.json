@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/roofing/static/css/main.4d6fc673.css",
-    "main.js": "/roofing/static/js/main.c3d2ff5e.js",
+    "main.js": "/roofing/static/js/main.d01903d5.js",
     "static/media/house.jpg": "/roofing/static/media/house.a44ee2bdbddfeed4e918.jpg",
     "static/media/1после.jpg": "/roofing/static/media/1после.956ff9bee911c7fec141.jpg",
     "static/media/1до.jpg": "/roofing/static/media/1до.6b038b45a2472f2abaf4.jpg",
@@ -40,10 +40,10 @@
     "index.html": "/roofing/index.html",
     "static/media/2gis.svg": "/roofing/static/media/2gis.3d0ac2d2dc8445c3623ef5095aa2e032.svg",
     "main.4d6fc673.css.map": "/roofing/static/css/main.4d6fc673.css.map",
-    "main.c3d2ff5e.js.map": "/roofing/static/js/main.c3d2ff5e.js.map"
+    "main.d01903d5.js.map": "/roofing/static/js/main.d01903d5.js.map"
   },
   "entrypoints": [
     "static/css/main.4d6fc673.css",
-    "static/js/main.c3d2ff5e.js"
+    "static/js/main.d01903d5.js"
   ]
 }
