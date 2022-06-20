@@ -14,8 +14,10 @@ export default function Footer() {
           <a className='whatsapp' 
             style={{margin: '15px'}}
             target="_blank" rel="noreferrer" 
-            href="https://wa.me/+79373146400">
-              <img src={whatsapp} alt="whatsapp" />WhatsApp</a>
+            href="https://web.whatsapp.com/send?phone=%2B79373146400&text&app_absent=0">
+              <img src={whatsapp} alt="whatsapp" />
+              WhatsApp <br /> <span style={{fontSize: '13px', marginTop: '-6px'}}>(для компьютера)</span>
+              </a>
            
           <div className='footer_loca'>
             <img style={{height: '50px', margin: '0 auto'}} src={logo} alt="logo" />
