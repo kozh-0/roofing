@@ -12,7 +12,7 @@ export default function LeafletMAP() {
         />
         <Marker style={{width: '40px'}} position={position}>
             <Popup >
-                <h6>Мы здесь :)<br />Приходите за покупками!<br />Индустриальное ш. 44/1</h6>
+                <h6>Мы здесь - приходите :)<br />Индустриальное ш. 44/1</h6>
             </Popup>
         </Marker>
         </MapContainer>

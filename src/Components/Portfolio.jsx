@@ -12,8 +12,8 @@ export default function Portfolio() {
     const next = () => setCurrent(current >= length - 1 ? 0 : current + 1);
 
   return (
-    <section className="portfolio container">
-        <h3 style={{marginTop: '0'}}>Примеры наших работ</h3>
+    <section className="portfolio">
+        <h3 className='container' style={{padding: '20px 0'}}>Примеры наших работ</h3>
             <div className='portfolio_doposle'>
                 <div>
                     <img src={doImg} alt="portfolioIMG" />
@@ -25,7 +25,7 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            <div className="portfolio_slider">
+            <div className="portfolio_slider container">
                     <div className="portfolio_slider_inner">
                         <div 
                             className="portfolio_slider_inner_item" 

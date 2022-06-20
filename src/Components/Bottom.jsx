@@ -29,8 +29,10 @@ export default function Bottom() {
 
         <div className="middle_sales container">
             <img className="pulsate" style={{borderRadius: '15%'}} src={Sales} alt="sale" />
-            <p>При покупке металлочерепицы скидка на водосточные системы 10-15% <br />
-            Скидка зависит от материала и его количества</p>
+            <div>
+                <p>При покупке металлочерепицы скидка на водосточные системы 10-15%</p>
+                <p>Скидка зависит от материала и его количества.</p>
+            </div>
         </div>
     </section>
         
