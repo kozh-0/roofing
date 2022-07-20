@@ -1,20 +1,20 @@
 // Металлочепепица
-import Montereiy from './img/Металлочерепица/Монтерей.jpg';
-import Monterosa from './img/Металлочерепица/Монтероса.jpg';
-import Tramontana from './img/Металлочерепица/Трамонтана.jpg';
-import Montekristo from './img/Металлочерепица/Монтекристо.jpg';
+import Montereiy from './img/Металлочерепица/monterei.jpg';
+import Monterosa from './img/Металлочерепица/monterosa.jpg';
+import Tramontana from './img/Металлочерепица/tramontana.jpg';
+import Montekristo from './img/Металлочерепица/montekristo.jpg';
 
 // Услуги
-import Montazh from './img/Услуги/Монтаж1.jpg';
-import Vodostok from './img/Услуги/Водосток.jpg';
-import Cherepica from './img/Услуги/Черепица.jpg';
-import Mansard from './img/Услуги/МансардныеОкна.jpg';
-import Profnastil from './img/Услуги/Профнастил.jpg';
-import SidingVinil from './img/Услуги/СайдингВиниловый.jpg';
-import SidingMetall from './img/Услуги/СайдингМеталл.jpg';
-import Snegoderzh from './img/Услуги/Снегодержатели.jpg';
-import FasadPanel from './img/Услуги/ФасадныеПанели.jpg';
-import ShtaketMetall from './img/Услуги/ШтакетникМеталл.jpg';
+import Montazh from './img/Услуги/montazh.jpg';
+import Vodostok from './img/Услуги/vodostok.jpg';
+import Cherepica from './img/Услуги/cherepica.jpg';
+import Mansard from './img/Услуги/mansardnieokna.jpg';
+import Profnastil from './img/Услуги/profnastil.jpg';
+import SidingVinil from './img/Услуги/sidingvinil.jpg';
+import SidingMetall from './img/Услуги/sidingmetall.jpg';
+import Snegoderzh from './img/Услуги/snegoderzhateli.jpg';
+import FasadPanel from './img/Услуги/fasadniepaneli.jpg';
+import ShtaketMetall from './img/Услуги/shtaketnikmetall.jpg';
 
 // Портфолио
 import img1 from './img/Портфолио/img1.JPG';

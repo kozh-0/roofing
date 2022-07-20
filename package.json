@@ -1,7 +1,6 @@
 {
   "name": "roofing",
   "author": "Dmitry Kozhevnikov",
-  "homepage": "https://kozh-0.github.io/roofing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "emailjs-com": "^3.2.0",
     "gh-pages": "^4.0.0"
   }
 }

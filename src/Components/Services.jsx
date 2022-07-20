@@ -1,8 +1,8 @@
 import { services } from "../imgData";
 import Sales from '../img/Услуги/Sales.png';
 
-export default function Bottom() {
-
+export default function Services() {
+    // console.log(services);
     
   return (
     <section>
@@ -32,6 +32,9 @@ export default function Bottom() {
             <div>
                 <p>При покупке металлочерепицы скидка на водосточные системы 10-15%</p>
                 <p>Скидка зависит от материала и его количества.</p>
+                <div 
+                    className="b_y_block b_y_block_call" 
+                >Звоните - подберем под вас! <button className="my_btn"><a href="tel:89373146400">Позвонить</a></button></div>
             </div>
         </div>
     </section>

@@ -3,6 +3,7 @@ body {
   height: 100%;
   font-size: 17px;
 }
+p { text-align: justify }
 
 
 %flex_center {
@@ -10,7 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.flex_center { @extend %flex_center }
 .pulsate {
   animation: pulsate 1.3s infinite;
 }
@@ -37,6 +38,67 @@ body {
   }
 }
 
+.my_btn {
+  background: orange;
+  border: 0;
+  border-radius: 7px;
+  margin-top: 10px;
+  height: 60px;
+  width: 140px;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all .3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #99183f;
+    color: white;
+  }
+  
+  a {color: unset}
+}
+
+
+
+
+
+
+
+// MODAL ========================================================
+.modal_window {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0, .4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+  z-index: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.modal_window.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+.modal_content {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white;
+}
+
+// PRELOADER ========================================================
+@keyframes lds-ring {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}
 
 // scroll
 ::-webkit-scrollbar{ width: 14px }
@@ -57,6 +119,28 @@ h3 { margin: 20px 0 }
   margin: 0 auto;
   height: 100%;
 }
+
+.b_y_block {
+  color: orange;
+  background: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+  
+  text-align: center;
+  width: fit-content;
+  margin-left: auto;
+
+  &_call {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: unset;
+    margin-bottom: 15px;
+    font-size: 20px;
+    button {margin-top: 0}
+  }
+}
+
 
 
 // HEADER =============================================================
@@ -94,11 +178,20 @@ header {
 .top {
   background: rgb(56, 56, 56) url('./img/house.jpg') center center/cover no-repeat;
   height: calc(100vh - 65px);
+  color: white;
+
+
+
+  & .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
 
   &_text{
     text-align: center;
-    height: 90%;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,6 +203,16 @@ header {
       border-bottom: 3px solid orange;
     }
    
+  }
+
+
+  &_call {
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    h5 { text-align: center }
+    
   }
 }
 
@@ -142,12 +245,12 @@ header {
     &_cards {
       display: flex;
       flex-wrap: wrap;
-      
+      justify-content: center;
       &_item {
         width: 25%;
         border: 1px solid white;
 
-        &_imgdiv { height: 300px }
+        &_imgdiv { height: 230px }
         
         &_text {
           display: flex;
@@ -167,7 +270,7 @@ header {
     
     .middle_services_title {
       background: #333;
-      color: white;
+      color: orange;
       text-align: center;
       padding: 20px 0;
       h5 {
@@ -199,10 +302,29 @@ header {
 }
 
 
+
+// FORMA ===========================================================
+.forma {
+  
+  &_fields {
+    @extend %flex_center;
+    input:nth-child(-n+3) { font-size: 20px }
+
+
+  }
+
+
+  textarea {
+    width: 100%;
+    height: 100px;
+    resize: none !important;
+  }
+}
+
+
 // Портфолио ===========================================================
 
 .portfolio {
-  border-top: 3px solid orange;
   border-bottom: 3px solid orange;
 
   &_doposle {
@@ -305,8 +427,8 @@ footer {
 
   .footer { 
     @extend %flex_center;
-    flex-wrap: wrap; 
-
+    flex-wrap: wrap;
+    justify-content: space-around;
     &_loca {
       display: flex;
       flex-direction: column;
@@ -324,11 +446,14 @@ footer {
 // MEDIA =========================================================================
 @media (max-width: 1060px) {
   .middle_services_cards_item{ width: 33.3% }
+  .portfolio_slider_inner_item {height: 420px}
+
 }
 
 @media (max-width: 736px) {
  .top_text h2 {font-size: 40px}
  .portfolio_doposle {flex-wrap: wrap}
+ .forma_fields {display: block;}
 }
 
 @media (max-width: 712px) {
@@ -342,7 +467,7 @@ footer {
   .middle_services_cards_item{ width: 50% }
 
   .header_logo { display: none }
-  .footer { justify-content: space-around !important}
+  .maps_leaflet { height: 420px }
 }
 
 @media (max-width: 666px) {
@@ -351,6 +476,12 @@ footer {
     justify-content: center;
   }
   .portfolio_slider_inner_item {height: 380px}
+
+  .middle_sales { 
+    flex-wrap: wrap;
+    flex-direction: column;
+    & div {margin-left: unset}
+  }
 }
 
 @media (max-width: 560px) {
@@ -360,20 +491,15 @@ footer {
   h3 {font-size: 34px}
   .top {height: 65vh}
 
-  .middle_sales { 
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
   .middle_services_cards_item{ width: 100% }
-  .maps_leaflet { height: 400px }
+  .maps_leaflet { height: 360px }
 
 }
 
 @media (max-width: 440px) {
   .container { padding: 0 }
   .middle_sales {margin-top: 20px }
-  .portfolio_slider_inner_item { height: 350px }
-  // .maps_leaflet { height: 350px }
+  .portfolio_slider_inner_item { height: 320px }
 
   .middle_services h5 { font-size: 22px }
 }

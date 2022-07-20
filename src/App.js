@@ -1,5 +1,5 @@
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import Footer from "./Components/Help/Footer";
+import Header from "./Components/Help/Header";
 import Main from "./Components/Main";
 
 export default function App() {

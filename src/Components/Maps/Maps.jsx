@@ -1,6 +1,6 @@
-import Yandex from '../img/Maps/Yandex.png';
-import Google from '../img/Maps/google.png';
-import TwoGis from '../img/Maps/2gis.svg';
+import Yandex from '../../img/Maps/Yandex.png';
+import Google from '../../img/Maps/google.png';
+import TwoGis from '../../img/Maps/2gis.svg';
 import LeafletMAP from './LeafletMAP';
 
 export default function Maps() {

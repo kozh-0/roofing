@@ -1,5 +1,5 @@
-import whatsapp from '../img/whatsapp.png';
-import logo from '../img/logo1.png'
+import whatsapp from '../../img/whatsapp.png';
+import logo from '../../img/logo1.png'
 
 export default function Header() {
   return (
