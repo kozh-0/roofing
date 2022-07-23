@@ -1,18 +1,62 @@
+import { useEffect } from "react";
 import { useState } from "react"
-
+import Form from "../Form";
 
 export default function Modal() {
 
-    const [active, setActive] = useState(true);
+    const ls = localStorage.getItem('hadOpened');
+    const [active, setActive] = useState(false);
+    const [hadOpened, setHadOpened] = useState(ls ? ls : false);
+
+    const styles = {
+        root: {
+            borderRadius: '15px',
+            background: 'white',
+            color: 'black',
+        },
+        colorBLK: { color: 'black' },
+        modalWidth: { width: "95%" }
+    }
+
+
+    useEffect(() => {
+        if (!hadOpened) {
+            setTimeout(() => {
+                setActive(true)
+                setHadOpened(true)
+                localStorage.setItem('hadOpened', true)
+            }, 20000);
+        }
+
+
+    }, [hadOpened])
+
+
+    const modalHandler = () => {
+        setActive(false);
+        setHadOpened(true);
+    }
 
     return (
-        <div 
-        className={active ? "modal_window active" : "modal_window"} 
-        onClick={() => setActive(false)}>
+        <>
+            <div 
+            className={active ? "modal_window active" : "modal_window"} 
+            onClick={modalHandler}>
+                <div className="modal_content" onClick={e => e.stopPropagation()}>
+                    <div 
+                        className="modal_exit"
+                        onClick={modalHandler}
+                    >&#10006;</div>
 
-            <div className="modal_content" onClick={e => e.stopPropagation()}>
-                <h1>Привет</h1>
+                    <Form styles={styles}/>
+                </div>
             </div>
-        </div>
+
+            <div 
+            className="modal_toggler pulsate"
+            onClick={() => setActive(true)}>
+                <i className="material-icons prefix">question_answer</i>
+            </div>
+        </>
     )
 }

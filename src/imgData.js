@@ -1,34 +1,34 @@
 // Металлочепепица
-import Montereiy from './img/Металлочерепица/monterei.jpg';
-import Monterosa from './img/Металлочерепица/monterosa.jpg';
-import Tramontana from './img/Металлочерепица/tramontana.jpg';
-import Montekristo from './img/Металлочерепица/montekristo.jpg';
+import Montereiy from './img/Металлочерепица/monterei.webp';
+import Monterosa from './img/Металлочерепица/monterosa.webp';
+import Tramontana from './img/Металлочерепица/tramontana.webp';
+import Montekristo from './img/Металлочерепица/montekristo.webp';
 
 // Услуги
-import Montazh from './img/Услуги/montazh.jpg';
-import Vodostok from './img/Услуги/vodostok.jpg';
-import Cherepica from './img/Услуги/cherepica.jpg';
-import Mansard from './img/Услуги/mansardnieokna.jpg';
-import Profnastil from './img/Услуги/profnastil.jpg';
-import SidingVinil from './img/Услуги/sidingvinil.jpg';
-import SidingMetall from './img/Услуги/sidingmetall.jpg';
-import Snegoderzh from './img/Услуги/snegoderzhateli.jpg';
-import FasadPanel from './img/Услуги/fasadniepaneli.jpg';
-import ShtaketMetall from './img/Услуги/shtaketnikmetall.jpg';
+import Montazh from './img/Услуги/montazh.webp';
+import Vodostok from './img/Услуги/vodostok.webp';
+import Cherepica from './img/Услуги/cherepica.webp';
+import Mansard from './img/Услуги/mansardnieokna.webp';
+import Profnastil from './img/Услуги/profnastil.webp';
+import SidingVinil from './img/Услуги/sidingvinil.webp';
+import SidingMetall from './img/Услуги/sidingmetall.webp';
+import Snegoderzh from './img/Услуги/snegoderzhateli.webp';
+import FasadPanel from './img/Услуги/fasadniepaneli.webp';
+import ShtaketMetall from './img/Услуги/shtaketnikmetall.webp';
 
 // Портфолио
-import img1 from './img/Портфолио/img1.JPG';
-import img2 from './img/Портфолио/img2.JPG';
-import img3 from './img/Портфолио/img3.JPG';
-import img4 from './img/Портфолио/img4.JPG';
-import img5 from './img/Портфолио/img5.JPG';
-import img6 from './img/Портфолио/img6.JPG';
-import img7 from './img/Портфолио/img7.JPG';
-import img8 from './img/Портфолио/img8.JPG';
-import img9 from './img/Портфолио/img9.JPG';
-import img10 from './img/Портфолио/img10.JPG';
-import img11 from './img/Портфолио/img11.JPG';
-import img12 from './img/Портфолио/img12.JPG';
+import img1 from './img/Портфолио/img1.webp';
+import img2 from './img/Портфолио/img2.webp';
+import img3 from './img/Портфолио/img3.webp';
+import img4 from './img/Портфолио/img4.webp';
+import img5 from './img/Портфолио/img5.webp';
+import img6 from './img/Портфолио/img6.webp';
+import img7 from './img/Портфолио/img7.webp';
+import img8 from './img/Портфолио/img8.webp';
+import img9 from './img/Портфолио/img9.webp';
+import img10 from './img/Портфолио/img10.webp';
+import img11 from './img/Портфолио/img11.webp';
+import img12 from './img/Портфолио/img12.webp';
 
 
 

@@ -1,5 +1,5 @@
-import Yandex from '../../img/Maps/Yandex.png';
-import Google from '../../img/Maps/google.png';
+import Yandex from '../../img/Maps/Yandex.webp';
+import Google from '../../img/Maps/google.webp';
 import TwoGis from '../../img/Maps/2gis.svg';
 import LeafletMAP from './LeafletMAP';
 

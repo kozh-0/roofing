@@ -1,5 +1,5 @@
 import { services } from "../imgData";
-import Sales from '../img/Услуги/Sales.png';
+import Sales from '../img/Услуги/Sales.webp';
 
 export default function Services() {
     // console.log(services);
@@ -20,7 +20,7 @@ export default function Services() {
                             style={{background: `url(${el.img}) center center/cover no-repeat`}}
                             className="middle_services_cards_item_imgdiv">
                         </div>
-                        <p className="middle_services_cards_item_text">{i+1}) {el.body}</p>
+                        <p className="middle_services_cards_item_text">{i+1}. {el.body}</p>
                     </div>
                 ))}
             </div>
