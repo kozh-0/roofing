@@ -10,8 +10,11 @@ export default function Top() {
 
 
                 <div className="top_call">
-                    <h5>Получить консультацию</h5>
-                    <button className="my_btn"><a href="tel:89373146400">Позвонить</a></button>
+                    <div className="top_call_offer">
+                        <h4>Подберем и рассчитаем стройматериалы для вашего дома</h4>
+                        <h5>Полная комплектация. Точный расчет. Доставка. Монтаж.</h5>
+                    </div>
+                    {/* <button className="my_btn"><a href="tel:89373146400">Позвонить</a></button> */}
                 </div>
             </div>
 

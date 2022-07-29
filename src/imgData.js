@@ -3,7 +3,6 @@ import Montereiy from './img/Металлочерепица/monterei.webp';
 import Monterosa from './img/Металлочерепица/monterosa.webp';
 import Tramontana from './img/Металлочерепица/tramontana.webp';
 import Montekristo from './img/Металлочерепица/montekristo.webp';
-
 // Услуги
 import Montazh from './img/Услуги/montazh.webp';
 import Vodostok from './img/Услуги/vodostok.webp';
@@ -15,7 +14,6 @@ import SidingMetall from './img/Услуги/sidingmetall.webp';
 import Snegoderzh from './img/Услуги/snegoderzhateli.webp';
 import FasadPanel from './img/Услуги/fasadniepaneli.webp';
 import ShtaketMetall from './img/Услуги/shtaketnikmetall.webp';
-
 // Портфолио
 import img1 from './img/Портфолио/img1.webp';
 import img2 from './img/Портфолио/img2.webp';
@@ -36,32 +34,35 @@ class Card {
     constructor(body, img) {
         this.body = body;
         this.img = img;
-        this.id = Math.random()
+        this.id = Math.random();
     }
 }
+class ServiceCard extends Card {
+    constructor(body, img, descr) {
+        super(body, img);
+        this.descr = descr;
+    }
+}
+
 
 export const metalTile = [
     new Card('Монтерей', Montereiy),
     new Card('Монтерроса', Monterosa),
     new Card('Трамонтана', Tramontana),
     new Card('Монтекристо', Montekristo),
-]
-
+];
 export const services = [
-    // new Card('Монтаж кровли, фасада, снегозадержателей, водосточных систем', Montazh),
-    new Card('Монтаж', Montazh),
-    new Card('Водосточные системы (пластик/металл)', Vodostok),
-    new Card('Гибкая черепица', Cherepica),
-    new Card('Мансардные окна', Mansard),
-    new Card('Профнастил', Profnastil),
-    new Card('Сайдинг виниловый', SidingVinil),
-    new Card('Сайдинг металлический', SidingMetall),
-    new Card('Снегозадержатели', Snegoderzh),
-    new Card('Фасадные панели', FasadPanel),
-    new Card('Штакетник металлический', ShtaketMetall),
-]
-
-
+    new ServiceCard('Монтаж', Montazh, 'собака'),
+    new ServiceCard('Водосточные системы (пластик/металл)', Vodostok, 'черепаха'),
+    new ServiceCard('Гибкая черепица', Cherepica, 'горилла'),
+    new ServiceCard('Мансардные окна', Mansard, 'розовый'),
+    new ServiceCard('Профнастил', Profnastil, 'малина'),
+    new ServiceCard('Сайдинг виниловый', SidingVinil, 'яблоко'),
+    new ServiceCard('Сайдинг металлический', SidingMetall, 'дом'),
+    new ServiceCard('Снегозадержатели', Snegoderzh, 'сталин'),
+    new ServiceCard('Фасадные панели', FasadPanel, 'кошка'),
+    new ServiceCard('Штакетник металлический', ShtaketMetall, 'телевизор'),
+];
 export const portfolio = [img1, img5, img3, img4, img2, img6, img7, img8, img9, img10, img11, img12];
 
 // console.log('ШТАКЕТНИК МЕТАЛЛИЧЕСКИЙ'.toLowerCase());

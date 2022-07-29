@@ -13,6 +13,7 @@ export default function Modal() {
             borderRadius: '15px',
             background: 'white',
             color: 'black',
+            boxShadow: '-12px 12px 8px 0px rgba(34, 60, 80, 0.3)'
         },
         colorBLK: { color: 'black' },
         modalWidth: { width: "95%" }
@@ -53,7 +54,7 @@ export default function Modal() {
             </div>
 
             <div 
-            className="modal_toggler pulsate"
+            className="modal_toggler pulse"
             onClick={() => setActive(true)}>
                 <i className="material-icons prefix">question_answer</i>
             </div>

@@ -70,6 +70,7 @@ export default function Form({styles}) {
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value.replace(/[^\d.]/g, ''))}
                                 onFocus={() => {phone.length === 0 ? setSeven(true) : setSeven(false)}}
+                                onBlur={() => {phone.length === 0 && setSeven(false)}}
                                 maxLength={10}
                                 name="phone"
                                 style={!!phone.length ? {...styles?.colorBLK, paddingLeft: '30px'} : null}

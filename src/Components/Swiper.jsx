@@ -9,7 +9,7 @@ export default function Swiper() {
     const slider = useRef();
     
     useEffect(() => {
-        setWidth(slider.current.scrollWidth - slider.current.offsetWidth)
+        setWidth(slider.current.scrollWidth - slider.current.offsetWidth + 30)
     }, [])
     
   return (

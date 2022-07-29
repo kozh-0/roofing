@@ -5,6 +5,7 @@ import Services from "./Services";
 import Form from "./Form";
 import Maps from "./Maps/Maps";
 import Swiper from "./Swiper";
+import SaleTimer from './SaleTimer';
 
 export default function Main() {
 
@@ -12,10 +13,11 @@ export default function Main() {
     <main className="content">
             <Modal/>
       <Top/>
-      <Middle/>
+      <SaleTimer/>
       <Services/>
-      <Form/>
       <Swiper/>
+      <Form/>
+      <Middle/>
       <Maps/>
     </main>
   )
