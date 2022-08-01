@@ -12,7 +12,7 @@ export default function Maps() {
   return (
     <>
     <section className='maps container'>
-        <h3>Нас можно найти в...</h3>
+        <h3>Местоположение</h3>
         <div className='maps_imgs'>
             
             <a target="_blank" rel="noreferrer" href={toYandex}>

@@ -46,7 +46,7 @@ export default function Form({styles}) {
 
             <div className="container" style={{height: '100%', ...styles?.modalWidth}}>
                 { !isSent ? <form className="forma" onSubmit={sendEmail}>
-                    <h3 style={styles?.colorBLK}>Заказать обратный звонок</h3>
+                    <h3 style={{...styles?.colorBLK, border: 'none', padding: '0'}}>Заказать обратный звонок</h3>
                     <div className="forma_fields">
                         <div className='flex_center'>
                             <i className="material-icons prefix">account_circle</i>

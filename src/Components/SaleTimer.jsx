@@ -21,7 +21,7 @@ export default function SaleTimer() {
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            updateTimer(1659186000000)
+            updateTimer(1659600000000)
         }, 1000);
 
         return () => clearInterval(intervalId);

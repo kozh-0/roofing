@@ -1,5 +1,3 @@
-import { metalTile } from "../imgData";
-
 
 export default function Middle() {
 
@@ -24,20 +22,6 @@ export default function Middle() {
 
             </div>
         </div>
-
-        <div>
-            <h3>Металлочерепица</h3>
-            <p className="b_y_block">Полиэстер, Viking, VALORI, PURMAN, Puretan, Norman, Cloudy, Agneta.</p>
-            <div className="cards">
-                {metalTile.map(el => (
-                    <div className="cards_item" key={el.id}>
-                        <img src={el.img} alt="img" />
-                        <h5>{el.body}</h5>
-                    </div>
-                ))}
-            </div>
-        </div>
-
     </section>
   )
 }
