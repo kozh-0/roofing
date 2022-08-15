@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 
 export function setCurrentTimer(countdown) {
     const timeStampDayjs = dayjs(countdown);
-    const nowDayjs = dayjs()
+    const nowDayjs = dayjs();
     if (timeStampDayjs.isBefore(nowDayjs)) {
         return {
             d: '00',
@@ -43,3 +43,4 @@ function addZero(number, minLength) {
     if (strNum.length >= minLength) return strNum;
     return '0'.repeat(minLength - strNum.length) + strNum;
 }
+

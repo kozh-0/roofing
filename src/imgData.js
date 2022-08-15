@@ -1,5 +1,7 @@
 // Металлочепепица =============================================================
-import Montereiy from './img/Металлочерепица/monterei.webp';
+import Montereiy from './img/Металлочерепица/monterei/monterei.webp';
+import Montereiy1 from './img/Металлочерепица/monterei/monterei1.webp';
+import Montereiy2 from './img/Металлочерепица/monterei/monterei2.webp';
 
 import Monterrosa from './img/Металлочерепица/monterrosa/monterrosa.webp';
 import Monterrosa1 from './img/Металлочерепица/monterrosa/monterrosa1.webp';
@@ -60,23 +62,23 @@ class ServiceCard extends Card {
 // new Card('Трамонтана', Tramontana),
 // new Card('Монтекристо', Montekristo),
 export const metalTile = {
-    monterei: [Montereiy],
+    monterei: [Montereiy, Montereiy1, Montereiy2],
     monterrosa: [Monterrosa, Monterrosa1, Monterrosa2],
     tramontana: [Tramontana, Tramontana1, Tramontana2],
     montecristo: [Montecristo, Montecristo1, Montecristo2]
 };
 
 export const services = [
-    new ServiceCard('Монтаж', Montazh, 'собака'),
-    new ServiceCard('Водосточные системы', Vodostok, 'черепаха'),
-    new ServiceCard('Гибкая черепица', Cherepica, 'горилла'),
-    new ServiceCard('Мансардные окна', Mansard, 'розовый'),
-    new ServiceCard('Профнастил', Profnastil, 'малина'),
-    new ServiceCard('Сайдинг виниловый', SidingVinil, 'яблоко'),
-    new ServiceCard('Сайдинг металлический', SidingMetall, 'дом'),
-    new ServiceCard('Снегозадержатели', Snegoderzh, 'сталин'),
-    new ServiceCard('Фасадные панели', FasadPanel, 'кошка'),
-    new ServiceCard('Штакетник металлический', ShtaketMetall, 'телевизор'),
+    new ServiceCard('Монтаж', Montazh, 'Работы по устройству кровель зданий и сооружений из кровельных материалов. Выполняется на этапе строительства здания или его капитального ремонта.'),
+    new ServiceCard('Водосточные системы', Vodostok, 'Предназначена для защиты кровли, фасада и фундамента здания от негативного воздействия атмосферных осадков.'),
+    new ServiceCard('Гибкая черепица', Cherepica, 'Эти материалы имеют практически нулевое водопоглощение, что исключает коррозию и гниение. Можно применять для кровель любой сложности.'),
+    new ServiceCard('Мансардные окна', Mansard, 'Располагаются в скате кровли и пропускают больше света, а дневное освещение полезно как для здоровья, так и для зрения.'),
+    new ServiceCard('Профнастил', Profnastil, 'Облицовочный стеновой или кровельный материал, используется при возведении наружных ограждений, стен и крыш.'),
+    new ServiceCard('Сайдинг виниловый', SidingVinil, 'Материал для облицовки фасада, имитирующий деревянную обшивку или натуральный камень. Имеет матовую поверхность, не требующую дополнительной покраски.'),
+    new ServiceCard('Сайдинг металлический', SidingMetall, 'Металлосайдинг схож с виниловым сайдингом, но устойчивее к огню. Материал остается барьером между зданием и очагом возгорания.'),
+    new ServiceCard('Снегозадержатели', Snegoderzh, 'Предотвращают сход больших масс снега и льда с кровель. Удерживают снежный покров, обеспечивая теплоизоляции.'),
+    new ServiceCard('Фасадные панели', FasadPanel, 'Преимущества фасадных панелей заключаются в их доступности, отличных эксплуатационных и технических свойствах.'),
+    new ServiceCard('Штакетник металлический', ShtaketMetall, 'Материал для возведения ограждения рядом с жилыми и промышленными объектами.'),
 ];
 export const portfolio = [img1, img5, img3, img4, img2, img6, img7, img8, img9, img10, img11, img12];
 

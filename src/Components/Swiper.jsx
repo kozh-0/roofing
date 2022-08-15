@@ -14,7 +14,7 @@ export default function Swiper() {
     
   return (
     <section>
-        <h3 className='container' style={{margin: '20px auto', padding: '0 0 7px 7px'}}>Примеры наших работ</h3>
+        <h3 className='container' style={{margin: '20px auto', padding: '0 0 7px 7px'}}>Портфолио</h3>
             <div className='portfolio_doposle'>
                 <div>
                     <img src={doImg} alt="portfolioIMG" />

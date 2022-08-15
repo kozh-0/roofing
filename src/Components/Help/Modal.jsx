@@ -13,7 +13,8 @@ export default function Modal() {
             borderRadius: '15px',
             background: 'white',
             color: 'black',
-            boxShadow: '-12px 12px 8px 0px rgba(34, 60, 80, 0.3)'
+            boxShadow: '-12px 12px 8px 0px rgba(34, 60, 80, 0.3)',
+            margin: '0 15px'
         },
         colorBLK: { color: 'black' },
         modalWidth: { width: "95%" }

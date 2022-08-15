@@ -60,7 +60,7 @@ p { text-align: justify }
 .modal_window {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0,0,0, .4);
+  background-color: rgba(0,0,0, .7);
   position: fixed;
   top: 0;
   left: 0;
@@ -94,12 +94,13 @@ p { text-align: justify }
   background: orange;
   color: black;
   border: 1px solid black;
-  transition: all .3s ease;
+  transition: all .2s ease;
   cursor: pointer;
 
   &:hover {
     background-color: #99183f;
     color: white;
+    transform: scale(1.2);
   }
 }
 .modal_content { position: relative }
@@ -110,7 +111,7 @@ p { text-align: justify }
   justify-content: center;
   position: absolute;
   cursor: pointer;
-  right: 0;
+  right: 15px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -157,7 +158,7 @@ h3 {
   background: #333;
   padding: 10px 15px;
   border-radius: 5px;
-  
+  font-size: 20px;
   text-align: center;
   width: fit-content;
   margin-left: auto;
@@ -170,7 +171,7 @@ h3 {
     justify-content: center;
     width: unset;
     font-size: 20px;
-    div {margin-right: 5%;}
+    div {margin-right: 5%; font-size: 22px;}
     button {margin-top: 0}
   }
 }
@@ -189,7 +190,7 @@ header {
 
     div {
       transition: all .2s ease;
-      &:hover { transform: scale(1.1) }
+      &:hover { transform: scale(1.2) }
       
       a {
         font-size: 24px;
@@ -233,11 +234,12 @@ header {
       border-bottom: 3px solid orange;
       font-weight: 500;
     }
+    h4 {letter-spacing: 0px;}
   }
 
 
   &_call {
-    margin-top: 7%;
+    margin-top: 6%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,6 +265,10 @@ header {
       div {
         width: 33.3333%; 
         height: 280px;
+        transition: all .2s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
     h5 {
@@ -286,8 +292,24 @@ header {
 
 
 
-// MIDDLE ===========================================================
+// QUIZ ===========================================================
+.quiz_container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
 
+  h4 {margin-bottom: 10px;}
+  p label span { font-size: 20px !important; }
+}
+
+
+
+// MIDDLE ===========================================================
+// ::selection {
+//   background: brown;
+//   }
 .middle {
   
   &_roofing_materials p { text-indent: 20px }
@@ -315,6 +337,16 @@ header {
             height: 100%;
             opacity: 0;
             transition: all .2s ease;
+            // overflow: auto;
+            h5 {
+              // height: 100%;
+              line-height: 25px;
+              padding: 5%;
+              // text-indent: 30px;
+              display: flex;
+              align-items: center;
+              // font-weight: 300;
+            }
 
             &:hover {
               background-color: rgba(255, 165, 0, 0.84);
@@ -364,8 +396,9 @@ header {
 
 // Sales & Timer ==================================================
 .sales {
+  h3 {margin-top: 30px;}
   &_offer {
-    padding: 40px 0 20px 0;
+    padding: 20px 0 20px 0;
     @extend %flex_center;
     justify-content: space-evenly;
     img { width: 250px }
@@ -418,6 +451,7 @@ header {
   h3 {color: white}
   i {margin-right: 10px}
     
+  .form_btn_2 {display: none;}
   &_fields {
     @extend %flex_center;
     input:nth-child(-n+3) { 
@@ -585,9 +619,11 @@ footer {
  .portfolio_doposle {flex-wrap: wrap}
  .forma_fields {display: block;}
  .top_call {margin-top: 10%}
- .cards_italy_inner div {
-  height: 245px;
- }
+ .cards_italy_inner div { height: 235px }
+
+ .form_btn {display: none;}
+ .form_btn_2 {display: block !important;}
+
 }
 
 @media (max-width: 712px) {
@@ -624,7 +660,7 @@ footer {
   .top_text h4 {font-size: 28px}
 
   h3 {font-size: 34px}
-  .top {height: calc(100vh - 122px)}
+  .top {height: calc(100vh - 120px)}
 
   .middle_services_cards_item{ width: 100% }
   .maps_leaflet { height: 360px }
@@ -644,5 +680,6 @@ footer {
     div { margin: 0 0 10px }
     button {width: 80%;}
   }
+  .middle_services_cards_item_imgdiv { height: 210px }
 }
 

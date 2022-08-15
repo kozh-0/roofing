@@ -1,24 +1,21 @@
 // import  debounce from 'lodash.debounce';
 import emailjs from 'emailjs-com';
 import { useState } from "react";
-import Preloader from './Help/Preloader';
+import Preloader from '../Help/Preloader';
 
-export default function Form({styles}) {
+export default function QuizForm({message}) {
     
     const API_KEY = process.env.REACT_APP_API_KEY;
     const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
     const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 
+    console.log(message.join(', '));
 
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
-    // const [email, setEmail] = useState('');
-    const [msg, setMsg] = useState('');
     const [seven, setSeven] = useState('');
 
     const PhoneRegEx = /^(\+7|7|8)?[\s-]?\(?[489][0-9]{2}\)?[\s-]?[0-9]{3}[\s-]?[0-9]{2}[\s-]?[0-9]{2}$/gm;
-    // const EmailRegEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
     const [isSent, setIsSent] = useState(false);
     const [isFormGood, setIsFormGood] = useState(true);
     const [preloader, setPreloader] = useState(false);
@@ -28,7 +25,7 @@ export default function Form({styles}) {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        if (PhoneRegEx.test(phone) /* && (email.length === 0 || EmailRegEx.test(email)) */) {
+        if (PhoneRegEx.test(phone)) {
 
             setPreloader(true);
 
@@ -42,12 +39,10 @@ export default function Form({styles}) {
 
 
     return (
-        <section className='forma_root' style={styles?.root}>
-
-            <div className="container" style={{height: '100%', ...styles?.modalWidth}}>
+            <div style={{height: '100%', color: 'black'}}>
                 { !isSent ? <form className="forma" onSubmit={sendEmail}>
-                    <h3 style={{...styles?.colorBLK, border: 'none', padding: '0'}}>Оставьте заявку и узнайте вашу скидку</h3>
-                    <div className="forma_fields">
+                    <h4 style={{marginBottom: '25px', textAlign: 'center'}}>Оставьте заявку и узнайте вашу скидку</h4>
+                    <div>
                         <div className='flex_center'>
                             <i className="material-icons prefix">account_circle</i>
                             <input 
@@ -57,12 +52,12 @@ export default function Form({styles}) {
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 name="name"
-                                style={styles?.colorBLK}
+                                style={{color: 'black'}}
                             />
                         </div>
-                        <div className='flex_center' style={{position: 'relative'}}>
+                        <div className='flex_center' style={{position: 'relative', color:'black !important'}}>
                             <i className="material-icons prefix">phone</i>
-                            {(!!phone.length || seven) && <span className='phone_span_plus_7' style={styles?.colorBLK}>+7</span>}
+                            {(!!phone.length || seven) && <span className='phone_span_plus_7'>+7</span>}
                             <input 
                                 required 
                                 placeholder={!seven ? "Телефон" : null} 
@@ -73,54 +68,28 @@ export default function Form({styles}) {
                                 onBlur={() => {phone.length === 0 && setSeven(false)}}
                                 maxLength={10}
                                 name="phone"
-                                style={!!phone.length ? {...styles?.colorBLK, paddingLeft: '30px'} : null}
+                                style={!!phone.length ? {paddingLeft: '10px'} : null}
                             />
-
                         </div>
-                        {/* <div className='flex_center'>
-                            <i className="material-icons prefix">email</i>
-                            <input 
-                            placeholder="Email (необязательно)" 
-                            type="email" 
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            name="email"
-                            style={styles?.colorBLK}
-                            />
-                            
-                        </div> */}
+                        <textarea name="message" defaultValue={message.join(', ')} style={{display: 'none'}}></textarea>
                         <div className='form_btn'>
                             { !preloader ? (
                                 <div className='flex_center form_btn'>
                                     {!isFormGood && <p>Некорректная форма!</p>}
-                                    <button className="my_btn" style={{ display: 'block', marginLeft: 'auto' }}>Отправить</button>
+                                    <button className="btn orange" style={{ display: 'block', marginLeft: 'auto' }}>Отправить</button>
                                 </div>
                             ) : <Preloader/> }
                         </div>
                     </div>
-                        <div className='flex_center'>
-                            <i className="material-icons prefix">message</i>
-                            <textarea 
-                                placeholder="Сообщение (необязательно)"
-                                type="text" 
-                                value={msg}
-                                onChange={(e) => setMsg(e.target.value)}
-                                name="message"
-                                className="materialize-textarea"
-                                style={styles?.colorBLK}
-                            ></textarea>
-                        </div>
-                        
                         <div className='form_btn_2'>
                             { !preloader ? (
                                 <div className='flex_center'>
                                     {!isFormGood && <p>Некорректная форма!</p>}
-                                    <button className="my_btn" style={{ display: 'block', marginLeft: 'auto' }}>Отправить</button>
+                                    <button className="btn orange" style={{ display: 'block', marginLeft: 'auto' }}>Отправить</button>
                                 </div>
                             ) : <Preloader/> }
                         </div>
-                </form> : <h2 style={{textAlign: 'center', padding: '70px 0', color: 'white',  ...styles?.colorBLK}}>С вами скоро свяжутся<span style={{color: 'green'}}>&#10004;</span></h2>}
+                </form> : <h2 style={{textAlign: 'center', padding: '70px 0'}}>С вами скоро свяжутся<span style={{color: 'green'}}>&#10004;</span></h2>}
             </div>
-        </section>
     )
 }

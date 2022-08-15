@@ -12,9 +12,9 @@ export default function Services() {
                 <p className="b_y_block">Полиэстер, Viking, VALORI, PURMAN, Puretan, Norman, Cloudy, Agneta.</p>
                 <div className="cards">
                     <div className="cards_italy">
-                        <h5>Монтекристо</h5>
+                        <h5>Монтерей <span>(360 руб.м.кв.)</span></h5>
                         <div className="cards_italy_inner">
-                            {montecristo.map((el, i) => (
+                            {monterei.map((el, i) => (
                                 <div 
                                 style={{background: `url(${el}) center center/cover no-repeat`}} 
                                 key={i}></div>
@@ -22,9 +22,9 @@ export default function Services() {
                         </div>
                     </div>  
                     <div className="cards_italy">
-                        <h5>Монтерей <span>(360 руб.м.кв.)</span></h5>
+                        <h5>Трамонтана</h5>
                         <div className="cards_italy_inner">
-                            {monterei.map((el, i) => (
+                            {tramontana.map((el, i) => (
                                 <div 
                                 style={{background: `url(${el}) center center/cover no-repeat`}} 
                                 key={i}></div>
@@ -42,9 +42,9 @@ export default function Services() {
                         </div>
                     </div>  
                     <div className="cards_italy">
-                        <h5>Трамонтана</h5>
+                        <h5>Монтекристо</h5>
                         <div className="cards_italy_inner">
-                            {tramontana.map((el, i) => (
+                            {montecristo.map((el, i) => (
                                 <div 
                                 style={{background: `url(${el}) center center/cover no-repeat`}} 
                                 key={i}></div>
@@ -62,7 +62,7 @@ export default function Services() {
                         <div className="middle_services_cards_item_imgdiv"
                             style={{background: `url(${el.img}) center center/cover no-repeat`}}
                         >    
-                            {/* <div><h1>{el.descr}</h1></div> */}
+                            <div><h5>{el.descr}</h5></div>
                         </div>
                         <p className="middle_services_cards_item_text">{i+1}. {el.body}</p>
                     </div>

@@ -5,7 +5,7 @@ export default function Top() {
             <div className="container">
                 <div className="top_text">
                     <h2>Все для кровли и фасада</h2>
-                    <h4>РУКАМИ ПРОФЕССИОНАЛОВ</h4>
+                    <h4>Напрямую от производителей,<br />По цене ниже рыночной!</h4>
                 </div>
 
 
