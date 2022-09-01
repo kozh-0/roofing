@@ -1,4 +1,5 @@
-# Проект для ООО "Профиль"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Creator of this site: https://github.com/kozh-0
+
+Проект для ООО "Профиль"
