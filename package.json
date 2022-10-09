@@ -1,6 +1,7 @@
 {
   "name": "roofing",
   "author": "Dmitry Kozhevnikov",
+  "homepage": "https://kozh-0.github.io/roofing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
